@@ -555,6 +555,37 @@
                                                 <div class="text-weight-medium">123 Main St, Suite 200, Anytown USA 00000</div>
                                             </div> -->
                                     </div>
+                                   
+                                    <div class="margin-bottom margin-medium">
+                                        <h4>Hours</h4>
+                                        <div data-ux="Block" data-aid="CONTACT_HOURS_REND">
+                                            <div data-ux="Element" id="bs-2">
+                                                <span data-ux="Element">
+                                                    <table style="border-spacing: 0px; text-align: left; display: inline-table;">
+                                                        <tr data-aid="CONTACT_HOURS_COLLAPSED_REND" style="cursor: pointer;">
+                                                            <td>
+                                                                <p data-ux="ContentText" data-aid="CONTACT_HOURS_COLLAPSED_LABEL" data-typography="BodyAlpha">Today </p>
+                                                            </td>
+                                                            <td>
+                                                                <p data-ux="ContentText" data-typography="BodyAlpha">
+                                                                    <span id="dropdown-trigger" rel="" role="button" aria-haspopup="menu" data-ux="Link" data-aid="CONTACT_HOURS_COLLAPSED_HR_LABEL" data-typography="LinkAlpha"> Closed</span>
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <p data-ux="ContentText" data-aid="CONTACT_HOURS_COLLAPSED_ARROW" data-typography="BodyAlpha">
+                                                                    <span id="dropdown-trigger" rel="" role="button" aria-haspopup="menu" data-ux="Link" data-typography="LinkAlpha">
+                                                                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" data-ux="Icon">
+                                                                            <path fill-rule="evenodd" d="M18.605 7l-6.793 7.024-6.375-7.002L4 8.467 11.768 17l.485-.501L20 8.489z"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -703,6 +734,74 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script type="text/javascript">
+        "IntersectionObserver" in window && "Intl" in window && "Locale" in window.Intl || document.write(`\x3Cscript src="https://img1.wsimg.com/poly/v3/polyfill.min.js?rum=0&unknown=polyfill&flags=gated&features=Intl.~locale.en-US">\x3C/script>`)
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    var dropdownTrigger = document.getElementById("dropdown-trigger");
+    var dropdownMenu = document.getElementById("dropdown-menu");
+
+    // Toggle dropdown menu when trigger is clicked
+    dropdownTrigger.addEventListener("click", function() {
+        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Close dropdown menu when clicking outside of it
+    document.addEventListener("click", function(event) {
+        if (!dropdownMenu.contains(event.target) && !dropdownTrigger.contains(event.target)) {
+            dropdownMenu.style.display = "none";
+        }
+    });
+});
+    </script>
+    <script src="//img1.wsimg.com/blobby/go/9d71ad92-c740-4f4e-bc72-2a4a6a1b7e47/gpub/7946efdf528f9f9b/script.js" crossorigin></script>
+    <script src="//img1.wsimg.com/ceph-p3-01/website-builder-data-prod/static/widgets/UX.4.36.0.js" crossorigin></script>
+    <script src="//img1.wsimg.com/blobby/go/9d71ad92-c740-4f4e-bc72-2a4a6a1b7e47/gpub/7bf1eaf527dd0c16/script.js" crossorigin></script>
+    <script defer src="//img1.wsimg.com/traffic-assets/js/tccl.min.js" crossorigin></script>
+     
+    
+    
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "image": ["http://img1.wsimg.com/isteam/stock/WVVjzOg"],
+            "@id": "http://9d71ad92.c740.4f4e.bc72.2a4a6a1b7e47.com",
+            "url": "uppertech.net",
+            "name": "Uppertech",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "2 Stonegate Dr",
+                "addressLocality": "Monroe",
+                "addressRegion": "NY",
+                "postalCode": "10950",
+                "addressCountry": "United States"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "41.36768",
+                "longitude": "-74.19131"
+            },
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "09:30",
+                "closes": "18:00"
+            }, {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday"],
+                "opens": "09:30",
+                "closes": "12:00"
+            }, {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "00:00"
+            }]
+        }
     </script>
     <!-- <script>
           var aTags = document.querySelectorAll('a');
